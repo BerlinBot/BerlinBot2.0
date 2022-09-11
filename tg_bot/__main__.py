@@ -44,7 +44,7 @@ And the following:
 DONATE_STRING = """Heya, glad to hear you want to donate!
 It took lots of work for [my creator](t.me/hi_Berlin) to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
-(see his bio!). He's just a poor student, so every little helps!
+(see his bio!).
 You Can Donate Him Just DM him; [](t.me/hi_Berlin)."""
 
 IMPORTED = {}
@@ -143,7 +143,7 @@ def start(bot: Bot, update: Update, args: List[str]):
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="👥 Support Group", url="https://t.me/berlinsupport247")], [InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/berlinsupport247") ,
-                     InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
+                     InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username))], [InlineKeyboardButton(text="😇Owner", url="https://t.me/hi_Berlin)]]))
 
     else:
         update.effective_message.reply_text("not dead...")
